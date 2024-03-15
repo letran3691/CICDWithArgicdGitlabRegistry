@@ -109,7 +109,7 @@ note: change argocd server to mode NodePort
 
 #### login argocd with user/passs 
 
-![img_1.png](img_2.png)
+![img_1.png](images/img_2.png)
 
 #### config ssh to gitlab repo
 
@@ -121,11 +121,11 @@ on gitlab server ssh-key
 
 #### create gitlab repo contain gitlab-ci and dockerfile
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 allow push
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 
 
