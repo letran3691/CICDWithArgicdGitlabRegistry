@@ -149,3 +149,16 @@ Note: in repo helm chart have secret file, maybe edit it
 
 ![](images/2024-03-15_14h30_26.gif)
 
+
+Note summary
+
+change:  
+    APP_NAME
+    IMAGE_TAG
+    git clone
+    cd
+    sed -i
+    git add
+
+Add private key to code-repo
+
