@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: {{ .Release.Name }}
+          image: {{.Values.image.repository}}
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              cpu: {{.Values.resources.limits.cpu}}
+            requests:
+              cpu: {{.Values.resources.requests.cpu}}
+      imagePullSecrets:
+        - name: k8s
+     nodeSelector:
+      disktype: ssd
