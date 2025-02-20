@@ -76,7 +76,7 @@ Note: set certs name them same your domain
     systemctl enable --now docker
 
 ### docker login
-    docker login -u user -p passwd registry.mbageas.life/code-repo
+    docker login -u user -p passwd registry.zzzzzzzzzz.life/code-repo
 
 
 
@@ -90,7 +90,7 @@ Note: set certs name them same your domain
 
 #### Test docker login all cluster nodes
 
-    docker login -u user -p passwd registry.mbageas.life/code-repo
+    docker login -u user -p passwd registry.zzzzzzzzz.life/code-repo
     
 
 #### deploy Argocd
@@ -137,7 +137,7 @@ Create a Variables
 
 #### create secret for docker registry 
 
-kubectl create secret docker-registry regcred-loginapp --docker-server=registry.mbageas.life --docker-username=k8s --docker-password=gldt-ZhQzbMVN1pgdUMCySfdL -n default
+kubectl create secret docker-registry regcred-loginapp --docker-server=registry.zzzzzzzzz.life --docker-username=k8s --docker-password=gldt-ZhQzbMVN1pgdUMCySfdL -n default
 
 Note: in repo helm chart have secret file, maybe edit it
 

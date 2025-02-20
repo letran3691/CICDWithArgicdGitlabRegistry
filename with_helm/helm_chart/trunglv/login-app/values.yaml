@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: registry.mbageas.life/root/login/login:6f2f313e
+  repository: registry.zzzzzzzzzzz.life/root/login/login:6f2f313e
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""

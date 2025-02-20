@@ -3,7 +3,7 @@ stages:
   - update_helm_chart
 variables:
   APP_NAME: login
-  IMAGE_TAG: registry.mbageas.life/root/login/$APP_NAME:$CI_COMMIT_SHORT_SHA
+  IMAGE_TAG: registry.zzzzzzzzzz.life/root/login/$APP_NAME:$CI_COMMIT_SHORT_SHA
 build_image:
   image: docker
   stage: build
@@ -27,7 +27,7 @@ update_helm_chart:
       - echo "$SSH_PRIVATE_KEY"
 #      - echo "$SSH_PRIVATE_KEY1" > /home/gitlab-runner/.ssh/id_rsa
       - chmod 600 /home/gitlab-runner/.ssh/id_rsa
-      - ssh-keyscan gitlab.mbageas.life >> /home/gitlab-runner/.ssh/known-hosts
+      - ssh-keyscan gitlab.zzzzzzzzzz.life >> /home/gitlab-runner/.ssh/known-hosts
       - ls -l /home/gitlab-runner/.ssh/known-hosts
       - chmod 644 /home/gitlab-runner/.ssh/known-hosts
         # run ssh-agent
@@ -37,7 +37,7 @@ update_helm_chart:
       # Git
       - git config --global user.email "admin@example.com"
       - git config --global user.name "root"
-      - git clone git@gitlab.mbageas.life:root/helm_chart.git
+      - git clone git@gitlab.zzzzzzzz.life:root/helm_chart.git
       - cd helm_chart
       - ls -latr
     script:
